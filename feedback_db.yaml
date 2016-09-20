@@ -3,11 +3,9 @@
     start_time: Timestamp
     end_time: Timestamp
     title: Text
-    presenter: Text
-    presenter_bio: Text
+    speaker: Text
 - Feedback:
     id: "Integer primary key"
-    type: Integer
     created_on: Timestamp
     rating: Integer
     comment: Text

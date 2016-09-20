@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Pycon India 2016 Feedback: {%if master_response.error %}{{master_response.error}}{% else %}{{master_response.item[0]}}{% endif %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.0/jquery.min.js"></script>
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+</head>
+<body>
+<h1 class="ui center aligned header">Pycon India 2016 Feedback</h1>
+<div class="ui container">
+  <div class="ui segments">
+    <div class="ui segment">
+        <div class="ui items">
+          <div class="item">
+            <div class="content">
+              {% if master_response.error %}
+              {{master_response.error}}
+              {% else %}
+              <a class="header">{{master_response.item[0]}}</a>
+              <div class="description">
+                <p>
+                  <i class="user icon"></i>
+                  {{master_response.item[1]}}
+                </p>
+                <p>
+                  <form action="/talk/{{master_response.talk_id}}/" method="POST" class="ui form">
+                      <div class="field">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Your Email">
+                      </div>
+                      <div class="inline fields">
+                        <label>How would you rate the talk overall?</label>
+                        <div class="field">
+                          <div class="ui radio checkbox">
+                            <label>Bad :(</label>
+                            <input type="radio" name="rating" tabindex="0" value="1" class="hidden">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui radio checkbox">
+                            <label>Not that Bad</label>
+                            <input type="radio" name="rating" tabindex="0" value="2" class="hidden">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui radio checkbox">
+                            <label>Okay</label>
+                            <input type="radio" name="rating" tabindex="0" value="3" class="hidden">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui radio checkbox">
+                            <label>Good</label>
+                            <input type="radio" name="rating" tabindex="0" value="4" class="hidden">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui radio checkbox">
+                            <input type="radio" name="rating" tabindex="0" value="5" class="hidden">
+                            <label>Great!</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field"><label for="comment">Care to elaborate the the rating ?</label><textarea name="comment"></textarea></div>
+                      <button class="ui button" type="submit">Submit</button>
+                    </form>
+                </p>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('.ui.checkbox').checkbox(); 
+</script>
+</body>
+</html>

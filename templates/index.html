@@ -1,32 +1,184 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Feedback for Pycon India 2016</title>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Responsive Elements - Semantic</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.0/jquery.min.js"></script>
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 </head>
 <body>
-<ul>
-{% for item in master_response.current_talks %}
-    <li>
-        <ul>
-            <li>item[0]</li>
-            <li>item[1]</li>
-            <li>item[2]</li>
-        </ul>
-    </li>
-{% endfor %}
-</ul>
-<ul>
-{% for item in master_response.all_talks %}
-<li>
-    <ul>
-        <li>item[0]</li>
-        <li>item[1]</li>
-        <li>item[2]</li>
-    </ul>
-</li>
-{%endfor%}
-</ul>
-<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<h1 class="ui center aligned header">Pycon India 2016 Feedback</h1>
+<div class="ui container">
+  <div class="ui segments">
+    <div class="ui segment">
+      <div class="ui styled fluid accordion">
+            <div class="title active">
+                <i class="dropdown icon"></i>
+                Current Talks
+            </div>
+            <div class="content active">
+                <p class="transition visible" style="display: block !important;">
+                  <div class="ui link cards">
+                  {% if master_response.current_talks%}
+                      {% for item in master_response.current_talks %}
+                      <div class="card">
+                          <div class="content">
+                              <div class="ui list">
+                                  <div class="item">
+                                      <i class="hashtag icon"></i>
+                                      <div class="content">
+                                        {{item[0]}}
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <i class="terminal icon"></i>
+                                      <div class="content">
+                                        <a href="/talk/{{item[0]}}/">
+                                          {{item[1]}}
+                                        </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <i class="user icon"></i>
+                                      <div class="content">
+                                        {{item[2]}}
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <i class="marker icon"></i>
+                                      <div class="content">
+                                        {{item[3]}}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      {% endfor %}
+                  {%else%}
+                  <div class="card">
+                      <div class="content">
+                          Nothing Here! Check the all talks section to submit feeback.
+                      </div>
+                  </div>
+                  {%endif%}
+                  </div>
+                </p>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                All Talks
+            </div>
+            <div class="content">
+                <p class="transition hidden">
+                    <div class="ui link cards">
+                  {% if master_response.all_talks%}
+                      {% for item in master_response.all_talks %}
+                      <div class="card">
+                          <div class="content">
+                              <div class="ui list">
+                                  <div class="item">
+                                      <i class="hashtag icon"></i>
+                                      <div class="content">
+                                        {{item[0]}}
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <i class="terminal icon"></i>
+                                      <div class="content">
+                                        <a href="/talk/{{item[0]}}/">
+                                          {{item[1]}}
+                                        </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <i class="user icon"></i>
+                                      <div class="content">
+                                        {{item[2]}}
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <i class="marker icon"></i>
+                                      <div class="content">
+                                        {{item[3]}}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      {% endfor %}
+                  {%else%}
+                  <div class="card">
+                      <div class="content">
+                          Nothing Here! Check the all talks section to submit feeback.
+                      </div>
+                  </div>
+                  {%endif%}
+                  </div>
+                </p>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                General Feedback
+            </div>
+            <div class="content">
+                <p class="transition hidden">
+                  <form action="/talk/0/" method="POST" class="ui form">
+                    <div class="field">
+                      <label>Email</label>
+                      <input type="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="inline fields">
+                      <label>Rate Your experience @ Pycbn India 2016</label>
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <label>Bad :(</label>
+                          <input type="radio" name="rating" tabindex="0" value="1" class="hidden">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <label>Not that Bad</label>
+                          <input type="radio" name="rating" tabindex="0" value="2" class="hidden">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <label>Okay</label>
+                          <input type="radio" name="rating" tabindex="0" value="3" class="hidden">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <label>Good</label>
+                          <input type="radio" name="rating" tabindex="0" value="4" class="hidden">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="rating" tabindex="0" value="5" class="hidden">
+                          <label>Great!</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field"><label for="comment">Any Other Suggestions you might have:</label><textarea name="comment"></textarea></div>
+                    <button class="ui button" type="submit">Submit</button>
+                  </form>   
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    $('.ui.accordion').accordion();
+    $('.ui.checkbox').checkbox(); 
+</script>
+
 </body>
 </html>
