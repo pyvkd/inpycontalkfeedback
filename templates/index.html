@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback for Pycon India 2016</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+</head>
+<body>
+<ul>
+{% for item in master_response.current_talks %}
+    <li>
+        <ul>
+            <li>item[0]</li>
+            <li>item[1]</li>
+            <li>item[2]</li>
+        </ul>
+    </li>
+{% endfor %}
+</ul>
+<ul>
+{% for item in master_response.all_talks %}
+<li>
+    <ul>
+        <li>item[0]</li>
+        <li>item[1]</li>
+        <li>item[2]</li>
+    </ul>
+</li>
+{%endfor%}
+</ul>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+</body>
+</html>

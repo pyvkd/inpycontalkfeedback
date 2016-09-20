@@ -1,0 +1,27 @@
+- Talk:
+    id: "Integer primary key"
+    start_time: Timestamp
+    end_time: Timestamp
+    title: Text
+    presenter: Text
+    presenter_bio: Text
+- Feedback:
+    id: "Integer primary key"
+    type: Integer
+    created_on: Timestamp
+    rating: Integer
+    comment: Text
+    email: Text
+    talk_id: Integer
+- Sponser:
+    id: "Integer primary key"
+    name: Text
+    username: Text
+    password: Text
+- SponserContact:
+    id: "Integer primary key"
+    sponser_id: Integer
+    email: Text
+    phone_no: Integer
+    ticket_no: Integer
+    created_on: Timestamp
