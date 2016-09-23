@@ -32,7 +32,7 @@ class Home:
                 master_response['current_talks'] = cur.fetchall()
                 cur = con.execute(Query2)
                 l = cur.fetchall()
-                master_response['all_talks'] = [x for x in l if x[1].startswith('-')]
+                master_response['all_talks'] = [x for x in l if not x[1].startswith('-')]
                 resp_status = falcon.HTTP_200
         except Exception as e:
             master_response['error'] = "Error %s. Kindly Inform about this to any volunteer @ Pycon India 2016." % str(e)
