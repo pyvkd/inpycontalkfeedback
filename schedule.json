@@ -7,41 +7,41 @@
             {
                 "location": "Audi 1",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
                 "location": "Audi 2",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "Breakfast and registration",
+                "title": " Registration and Breakfast ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
 
             {
-                "location": "Room 1",
+                "location": "Audi 1",
                 "time": "10:00 AM - 1:00 PM",
                 "title": " Demystifying the Django REST Framework: Web Development",
                 "speaker": "Haris Ibrahim K. V",
                 "link": "https://in.pycon.org/cfp/2016/proposals/demystifying-the-django-rest-framework~dBNxd/"
             },
             {
-                "location": "Room 2",
+                "location": "Audi 2",
                 "time": "10:00 AM - 1:00 PM",
                 "title": "Docker Workshop: Infrastructure",
                 "speaker": "Lalatendu Mohanty",
                 "link": "https://in.pycon.org/cfp/2016/proposals/docker-workshop~dyXwb/"
             },
             {
-                "location": "Room 3",
+                "location": "Lecture Hall 2",
                 "time": "10:00 AM - 1:00 PM",
                 "title": " Talking to Machines : Optimizing Neural Networks with Theano: Scientific Computing",
                 "speaker": "Kumar Krishna Agarwal",
@@ -55,24 +55,24 @@
                 "link": ""
             },
             {
-                "location": "Room 1",
+                "location": "Audi 1",
                 "time": "2:00 PM - 5:00 PM",
                 "title": " Scaling Django with Kubernetes: Infrastructure",
                 "speaker": "Saket Bhushan",
                 "link": "https://in.pycon.org/cfp/2016/proposals/scaling-django-with-kubernetes~boONb/"
             },
             {
-                "location": "Room 2",
+                "location": "Audi 2",
                 "time": "2:00 PM - 5:00 PM",
                 "title": " Productive Coding with PyCharm",
                 "speaker": "Paul Everitt",
                 "link": "https://in.pycon.org/cfp/2016/proposals/productive-coding-with-pycharm~aA11a/"
             },
             {
-                "location": "Room 3",
+                "location": "Audi 3",
                 "time": "2:00 PM - 5:00 PM",
                 "title": "Building a Lie Detector: Multi-Modal Sentiment Analysis: Scientific Computing",
-                "speaker": "Mimansa Jaiswal",
+                "speaker": "Mimansa Jaiswal and Sairam Tabibu",
                 "link": "https://in.pycon.org/cfp/2016/proposals/building-a-lie-detector-multi-modal-sentiment-analysis~epk1d/"
             }
         ]
@@ -92,14 +92,14 @@
             {
                 "location": "Audi 2",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "Breakfast and registration",
+                "title": " Registration and Breakfast ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture room 2",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
@@ -114,42 +114,42 @@
             {
                 "location": "Audi 2",
                 "time": "09:15 AM - 09:30 AM",
-                "title": "Introduction and KG Award",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "09:15 AM - 09:30 AM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
                 "location": "Audi 1",
                 "time": "09:30 AM - 10:15 AM",
-                "title": "Keynote by BG",
+              "title": "Keynote by Baishampayan Ghose",
                 "speaker": "",
                 "link": ""
             },
             {
                 "location": "Audi 2",
                 "time": "09:30 AM - 10:15 AM",
-                "title": "Keynote by BG",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "09:30 AM - 10:15 AM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
                 "location": "Audi 1",
                 "time": "10.15 AM - 10.45 AM ",
-                "title": "",
+                "title": "Tea Break",
                 "speaker": "",
                 "link": ""
             },
@@ -161,9 +161,9 @@
                 "link": ""
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "10.15 AM - 10.45 AM ",
-                "title": "",
+                "title": "Tea Break",
                 "speaker": "",
                 "link": ""
             },
@@ -182,7 +182,7 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/flying-a-drone~aMZQb/"
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "10.45 AM - 11.30 AM",
                 "title": "Good Bye, Call Stack; Hello, Event Driven Architectures!!",
                 "speaker": "Anvith ShivaKumara",
@@ -203,7 +203,7 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/building-companion-chatbot-with-python~dN8Ka/"
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "11.30 AM - 12.15 PM",
                 "title": "11:30-11:50 Deploy Python Applications Anywhere. 11:55-12:15 Machine Learning with python (sponsored talk Microsoft)",
                 "speaker": "",
@@ -224,14 +224,14 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/generators-inside-out~b2WPd/"
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "12.15 PM - 1.00 PM",
-                "title": "(Sponsored Talk) Python @ Sacle in GoIbibo",
+                "title": "(Sponsored Talk) Python @ Scale in GoIbibo",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lunch Hall",
+                "location": "Lunch Hall 2",
                 "time": "1:00 PM - 2:00 PM",
                 "title": "Lunch",
                 "speaker": "",
@@ -247,14 +247,14 @@
             {
                 "location": "Audi 2",
                 "time": "2:00 PM - 2:45 PM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "2:00 PM - 2:45 PM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
@@ -273,9 +273,9 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/helix-and-salt-case-study-in-high-volume-and-distributed-python-applications~aAm1a/"
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "2.45 PM - 3.30 PM",
-                "title": "(Sponsored Talk) Jet brains",
+                "title": "Sponsored Talk JetBrains: Polyglot Python with PyCharm",
                 "speaker": "",
                 "link": ""
             },
@@ -294,7 +294,7 @@
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "3:30 PM - 4:00 PM",
                 "title": "Tea Break",
                 "speaker": "",
@@ -315,7 +315,7 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/testing-native-binaries-using-cffi-and-pytest~azvra/"
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "4.00 PM - 4.45 PM",
                 "title": "The trends in choosing licenses in Python ecosystem",
                 "speaker": "Anwesha Sarkar",
@@ -324,22 +324,22 @@
             {
                 "location": "Audi 1",
                 "time": "4.45 PM - 5.30 PM",
-                "title": "Keynote",
+                "title": "Keynote by Van L",
                 "speaker": "Van L",
                 "link": ""
             },
             {
                 "location": "Audi 2",
                 "time": "4.45 PM - 5.30 PM",
-                "title": "Keynote",
-                "speaker": "Van L",
+                "title": " - ",
+                "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "4.45 PM - 5.30 PM",
-                "title": "Keynote",
-                "speaker": "Van L",
+                "title": " - ",
+                "speaker": "",
                 "link": ""
             }
         ]
@@ -352,21 +352,21 @@
             {
                 "location": "Audi 1",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
                 "location": "Audi 2",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "Breakfast and registration",
+                "title": " Registration and Breakfast ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture room 1",
+                "location": "Lecture Hall 2",
                 "time": "08:00 AM - 09:00 AM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
@@ -374,22 +374,22 @@
             {
                 "location": "Audi 1",
                 "time": "9:30 AM - 10:15 AM",
-                "title": "Keynote",
+                "title": "Keynote by Andreas Muller",
                 "speaker": "Andreas Mueller",
                 "link": ""
             },
             {
                 "location": "Audi 2",
                 "time": "9:30 AM - 10:15 AM",
-                "title": "Keynote",
-                "speaker": "Andreas Mueller",
+                "title": " - ",
+                "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "9:30 AM - 10:15 AM",
-                "title": "Keynote",
-                "speaker": "Andreas Mueller",
+                "title": " - ",
+                "speaker": "",
                 "link": ""
             },
             {
@@ -407,7 +407,7 @@
                 "link": ""
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "10.15 AM - 10.45 AM ",
                 "title": "Tea Break",
                 "speaker": "",
@@ -428,7 +428,7 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/containerize-upstream-projects-effortlessly~er9kd/"
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "10:45 AM - 11:30 AM",
                 "title": "Realtime microservices with server side Flux",
                 "speaker": "Ratnadeep Debnath",
@@ -449,7 +449,7 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/creating-a-recommendation-engine-based-on-nlp-and-contextual-word-embeddings~aOZGe/"
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "11.30 AM - 12.15 PM",
                 "title": "11:30-11:50 Add Intelligence to your Python Apps 11:55-12:15 Put swag in your API \n\n(sponsored talk Microsoft)",
                 "speaker": "",
@@ -470,7 +470,7 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/load-testing-using-locustio~eZ0Eb/"
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "12.15 PM - 1.00 PM",
                 "title": "Sponsored Talk - Redhat",
                 "speaker": "",
@@ -491,7 +491,7 @@
                 "link": ""
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "1.00 PM - 2.00 PM",
                 "title": "Lunch Break",
                 "speaker": "",
@@ -507,14 +507,14 @@
             {
                 "location": "Audi 2",
                 "time": "2.00 PM - 2.45 PM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "2.00 PM - 2.45 PM",
-                "title": "",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
@@ -533,9 +533,9 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/building-a-secure-iot-platform-using-paho-and-flask~eZ8vb/"
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "2:45 PM - 3:30 PM",
-                "title": "Digital Ocean",
+                "title": "Sponsored Talk Digital Ocean: Python On the Cloud",
                 "speaker": "",
                 "link": ""
             },
@@ -554,7 +554,7 @@
                 "link": ""
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "3.30 PM - 4.00 PM",
                 "title": "Tea Break",
                 "speaker": "",
@@ -575,11 +575,11 @@
                 "link": "https://in.pycon.org/cfp/2016/proposals/micropython-porting-python-to-microcontrollers~avZga/"
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "4:00 PM - 4:45 PM",
-                "title": "",
-                "speaker": "",
-                "link": ""
+                "title": "Deploying your python backend with (almost) zero cost",
+                "speaker": "Srinivasan R",
+                "link": "https://in.pycon.org/cfp/2016/proposals/deploying-your-python-backend-with-almost-zero-cost~elv7b/"
             },
             {
                 "location": "Audi 1",
@@ -591,18 +591,17 @@
             {
                 "location": "Audi 2",
                 "time": "4:45 PM - 5:30 PM",
-                "title": "Feedback and Vote of thanks",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             },
             {
-                "location": "Lecture Hall 3",
+                "location": "Lecture Hall 2",
                 "time": "4:45 PM - 5:30 PM",
-                "title": "Feedback and Vote of thanks",
+                "title": " - ",
                 "speaker": "",
                 "link": ""
             }
         ]
     }
 ]
-
