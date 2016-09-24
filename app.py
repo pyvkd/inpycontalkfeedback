@@ -22,7 +22,7 @@ class Home:
             nows = req.get_param('time')
         else:
             nows = str(datetime.datetime.now() - datetime.timedelta(minutes=5))
-        con = sqlite3.connect('pyconfeedback.db', detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
+        con = sqlite3.connect('../pyconfeedback.db', detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
         Query1 = """SELECT id, title, speaker, room FROM Talk WHERE start_time <= Datetime(?) AND end_time >= Datetime(?)"""
         Query1data = (nows, nows)
         Query2 = """SELECT id, title, speaker, room FROM Talk"""
@@ -51,7 +51,7 @@ class Feedback:
         resp_status = None
         master_response = {}
         Query1 = """SELECT title, speaker, room FROM Talk WHERE id = %d""" % int(talk_id)
-        con = sqlite3.connect('pyconfeedback.db', detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
+        con = sqlite3.connect('../pyconfeedback.db', detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
         try:
             with con:
                 cur = con.execute(Query1)
@@ -75,7 +75,7 @@ class Feedback:
         master_response = {}
         print Query1data
         Query1 = """INSERT INTO feedback(email, rating, created_on, talk_id, comment) values(?, ?, ?, ?, ?)"""
-        con = sqlite3.connect('pyconfeedback.db', detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
+        con = sqlite3.connect('../pyconfeedback.db', detect_types=sqlite3.PARSE_DECLTYPES|sqlite3.PARSE_COLNAMES)
         try:
             with con:
                 con.execute(Query1, Query1data)
