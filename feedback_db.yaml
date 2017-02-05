@@ -1,25 +1,8 @@
-- Talk:
-    id: "Integer primary key"
-    start_time: Timestamp
-    end_time: Timestamp
-    title: Text
-    speaker: Text
-- Feedback:
-    id: "Integer primary key"
-    created_on: Timestamp
-    rating: Integer
-    comment: Text
-    email: Text
-    talk_id: Integer
-- Sponser:
-    id: "Integer primary key"
-    name: Text
-    username: Text
-    password: Text
-- SponserContact:
-    id: "Integer primary key"
-    sponser_id: Integer
-    email: Text
-    phone_no: Integer
-    ticket_no: Integer
-    created_on: Timestamp
+create table talk(id integer primary key,start_time timestamp, end_time timestamp, title text, speaker text, room text, type integer)
+create tablefeedback(id integer primary key, created_on timestamp, rating: Integer
+    comment text
+    email text
+    talk_id integer
+    talk_type integer
+    talk_title text
+    talk_speaker text)
