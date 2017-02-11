@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Site Properties -->
-    <title>Pycon India 2016 Feedback: {%if master_response.error %}{{master_response.error}}{% else %}{{master_response.item[0]}}{% endif %}</title>
+    <title>{{master_response.event}}: {%if master_response.error %}{{master_response.error}}{% else %}{{master_response.item[0]}}{% endif %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <script type="application/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.0/jquery.min.js"></script>
     <script type="application/javascript" src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 </head>
 <body>
-<h1 class="ui center aligned header">Pycon India 2016 Feedback</h1>
+<h1 class="ui center aligned header">{{master_response.event}}</h1>
 <div class="ui container">
   <div class="ui segments">
     <div class="ui segment">
@@ -34,6 +34,10 @@
                       <div class="field">
                         <label>Email</label>
                         <input type="email" name="email" placeholder="Your Email">
+                      </div>
+                      <div class="field">
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Your Name">
                       </div>
                       <div class="inline fields">
                         <label>How would you rate the talk overall?</label>
