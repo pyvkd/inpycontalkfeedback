@@ -90,7 +90,7 @@ class Feedback:
     def on_get(self, req, resp, talk_id=None):
         resp_status = None
         master_response = {}
-        Query1 = """SELECT title, speaker, room FROM Talk WHERE id = %d""" % int(talk_id)
+        Query1 = """SELECT title, speaker, room FROM talk WHERE id = %d""" % int(talk_id)
         con = sqlite3.connect(confs['database'], detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES)
         try:
             with con:
@@ -138,11 +138,12 @@ class AdminTalk:
         resp_status = None
         master_response = {}
         if talk_id:
-            Query1 = """SELECT * FROM Talk WHERE id = %d""" % int(talk_id)
+            Query1 = """SELECT * FROM talk WHERE id=?"""
+            Query1data = (talk_id)
             con = sqlite3.connect(confs['database'], detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES)
             try:
                 with con:
-                    cur = con.execute(Query1)
+                    cur = con.execute(Query1, Query1data)
                     master_response['item'] = cur.fetchone()
                     master_response['talk_id'] = talk_id
                     resp_status = falcon.HTTP_200
