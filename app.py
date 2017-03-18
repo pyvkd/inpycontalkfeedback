@@ -111,8 +111,8 @@ class Feedback:
     def on_post(self, req, resp, talk_id=None):
         resp_status = None
         master_response = {}
-        Query1data = (req.get_param('email'), req.get_param_as_int('rating'), str(datetime.datetime.now()), int(talk_id), req.get_param('comment'))
-        Query1 = """INSERT INTO feedback(email, rating, created_on, talk_id, comment) values(?, ?, ?, ?, ?)"""
+        Query1data = (req.get_param('name'), req.get_param('email'), req.get_param_as_int('rating'), str(datetime.datetime.now()), int(talk_id), req.get_param('comment'))
+        Query1 = """INSERT INTO feedback(name, email, rating, created_on, talk_id, comment) values(?, ?, ?, ?, ?, ?)"""
         con = sqlite3.connect(confs['database'], detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES)
         try:
             with con:
