@@ -4,5 +4,5 @@ SCHEMA_FEEDBACK="create table feedback(id integer primary key, name text, create
 mkdir sqlite3db
 echo $SCHEMA_TALK | sqlite3 sqlite3db/feedback.db
 echo $SCHEMA_FEEDBACK | sqlite3 sqlite3db/feedback.db
-virtualenv venv
+virtualenv -p python3.6 venv
 source venv/bin/activate && pip install -r requirements.txt

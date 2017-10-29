@@ -11,9 +11,9 @@ env = Environment(loader=PackageLoader('app', 'templates'))
 
 # Confs Dictonary
 confs = {
-    "event": "Pydelhi Conf 2017 Feedback",
+    "event": "Pycon India 2017 Feedback",
     "database": "sqlite3db/feedback.db",
-    "token_list": ["done0-query", "dont-mess-upthis"] # update the token_list for live deployment.
+    "token_list": ["done0-query", "dont-mess-upthis"]  # update the token_list for live deployment.
 }
 
 
@@ -27,7 +27,7 @@ class Home:
         resp_status = None
         master_response = {}
         if req.get_param('time', None):
-            print req.get_param('time')
+            print(req.get_param('time'))
             nows = req.get_param('time')
         else:
             nows = str(datetime.datetime.now() - datetime.timedelta(minutes=5))
